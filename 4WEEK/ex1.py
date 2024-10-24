@@ -14,8 +14,9 @@ print("2. 1에서 만든 데이터 프레임을 출력하시오")
 print(df, end='\n\n')
 
 print("3. 학생 이름만 추출해서 출력하시오")
-name = df['이름']
-print(name, end='\n\n')
+# name = df['이름']
+# print(name, end='\n\n')
+print(df['이름'], end='\n\n')
 
 print("4. 'Park' 성적만 출력하시오")
 park = df.loc[1]

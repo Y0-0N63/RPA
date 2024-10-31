@@ -3,9 +3,10 @@ app = FastAPI()
 
 from fastapi import Form
 @app.post("/plus")
-async def plus_form (num1 : int = Form(...), num2 : int = Form(...)) :
-  result = num1 + num2
-  return {"msg" : f"{num1} + {num2} = {result}"}
+async def plus_form (num1 : int = Form(...), num2 : int = Form(...), num3 : int = Form(...), num4 : int = Form(...)) :
+  result1 = num1 + num2
+  result2 = num3 + num4
+  return {"result" : f"{num1} + {num2} = {result1} | {num3} + {num4} = {result2}"}
 
 from fastapi.staticfiles import StaticFiles
 app.mount("/", StaticFiles(directory="static", html=True), name="static")

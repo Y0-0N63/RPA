@@ -4,7 +4,7 @@
 # 2-1. 접속할 사이트 지정
 # 2-2. 페이지 내에서 데이터 접근 or 검색 실행 코드
 # + 검색 실행이란 -> 페이지 내 엘리먼트를 조작하는 것
-# ㄴ 엘리먼트 찾기 -> 마우스, 키 입력
+# ㄴ 엘리먼트 찾기 -> 마우스, 키 입력0
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
